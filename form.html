@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission Form - Sri Chaitanya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="form-page">
+  <section class="admission-form">
+    <h2>Admission Form</h2>
+    <form id="admissionForm" name="submit-to-google-sheet">
+      <input type="text" name="studentName" placeholder="Full Name" required>
+      <input type="text" name="fatherName" placeholder="Father's Full Name" required>
+      <input type="email" name="email" placeholder="Email ID" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="text" name="city / village" placeholder="City / village" required>
+      <input type="text" name="district" placeholder="District" required>
+      <input type="text" name="state" placeholder="State" required>
+
+      <select name="campusType" required>
+        <option value="">Select Campus Type</option>
+        <option value="Day">Day</option>
+        <option value="Residential">Residential</option>
+      </select>
+
+      <select name="course" required>
+        <option value="">Select Course</option>
+        <option value="Mains">Mains</option>
+        <option value="NEET">NEET</option>
+        <option value="MEC">MEC</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <button type="submit">Submit</button>
+      <p id="msg"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+  <form id="admissionForm" name="submit-to-google-sheet">
+
+</body>
+</html>
+
+  <!-- Footer Contact Section -->
+  <footer>
+    <section class="about-contact">
+      <h2>Contact Us</h2>
+      <ul>
+        <li>Email: <a href="mailto:crp.srinivas@gmail.com">crp.srinivas@gmail.com</a></li>
+        <li>Phone: <a href="tel:+919866984667">+919866984667</a></li>
+        <li>Office Hours: 9:00 AM to 6:00 PM (Mon - Sat)</li>
+        <li>Location: Sri Chaitanya Campus, Hyderabad, Telangana</li>
+      </ul>
+    </section>
+
+    <div class="footer-note">
+      <p>© 2025 Sri Chaitanya Admissions. All rights reserved.</p>
+    </div>
+  </footer>
+
