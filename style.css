@@ -131,3 +131,112 @@ footer .about-contact a {
   font-size: 14px;
   opacity: 0.8;
 }
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #003366;
+}
+
+/* Welcome Screen */
+.welcome-screen {
+  height: 100vh;
+  background: linear-gradient(135deg, #003366, #005599);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.welcome-content h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.welcome-content h2 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-top: 15px;
+  animation: scaleIn 2s ease-in-out;
+}
+
+.apply-btn {
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #003366;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  background-color: #ffcc00;
+  color: #003366;
+  transform: scale(1.05);
+}
+
+/* Form Page */
+.admission-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+form input,
+form select,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #003366;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005599;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.welcome-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease-in-out;
+  background-color: white;     /* Adds white behind transparent parts */
+  padding: 10px;                /* Optional: adds space around image */
+  border-radius: 10px;          /* Optional: rounds corners */
+}
+
+
